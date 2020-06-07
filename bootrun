@@ -1,0 +1,3 @@
+as -o p $1
+ld -o run.bin  -Ttext 0x7c00 --oformat binary -e start p
+rm p
